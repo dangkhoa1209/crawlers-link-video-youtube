@@ -1,0 +1,30 @@
+{
+    "YOUTUBE_CRAWLER": {    
+        "URL": "https://www.youtube.com/",
+        "TOTAL_ID": 500,
+        "FILTER": true,
+        "FILTER_VIEWS": 50000,
+        "COUNT_ERROR": 50
+    },
+
+    "VIDEO_API": {
+        "URL": "https://youtube.googleapis.com/youtube/v3/videos",
+        "PART": "snippet%2Cstatistics",
+        "KEY": "AIzaSyBvIwJnjPYOD3OXPviJZyhTS9002JJ9IWI"
+    },
+
+    "CHANNEL_API": {
+        "URL": "https://youtube.googleapis.com/youtube/v3/channels",
+        "PART": "snippet%2Cstatistics",
+        "KEY": "AIzaSyAgpNr0sixbEI3-qRygEgRnT39AZdMRo4g"
+    },
+
+    "DEFAULT_HEADLESS_BROWSER": false,
+    "HEADLESS_BROWSER_TIMEOUT": 20000,
+    "DEV_TOOLS": true,
+
+    "PUPPETEER_ARGS": [
+        "--no-sandbox",
+        "--disable-setuid-sandbox"
+    ]
+}
